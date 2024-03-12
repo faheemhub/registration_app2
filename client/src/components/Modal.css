@@ -1,0 +1,25 @@
+.modal{
+    height: 300px;
+    width: 200px;
+    position: fixed;
+    top: 52px;
+    right: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(170, 168, 168);
+    z-index: 1;
+    transition: ease-in-out 1s;
+}
+.profile{
+    border-bottom: 1px solid rgb(170, 168, 168);;
+    height: 100px;
+    padding: 0 5px;
+}
+.profileSetting{
+    border-bottom: 1px solid rgb(170, 168, 168);;
+    height: 110px;
+    padding: 0 5px;
+}
+.logout{
+    height: auto;
+    padding: 0 5px;
+}
