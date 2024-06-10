@@ -66,13 +66,13 @@ app.post('/sendOtp', async(req,res)=>{
         port:587,
         secure:false,
         auth:{
-            user:'truecolumn20@gmail.com',
-            pass:'hkov bwja xegw wxyt',
+            user:'sending-mail@gmail.com',
+            pass:'sending-mail-app-password',
     
         }
     });
     const mailOptions = {
-        from:"truecolumn20@gmail.com",
+        from:"sending-mail@gmail.com",
         to:req.body.email,
         subject:"this is a test mail",
         text:otp
@@ -85,7 +85,6 @@ app.post('/sendOtp', async(req,res)=>{
             res.send({success:true})
         }
     });
-    // res.send({success:true})
 }
 else{
     res.send({message:"user not found"})
@@ -115,7 +114,6 @@ app.post('/resetPassword', async(req,res)=>{
             );
             if(newPassword.acknowledged === true){
                 res.send(newPassword);
-                // res.send({success:true, message:"Password updated successfully"})
             }else{
             res.send(JSON.stringify({message:"Oops! Something went wrong!"}))
         }
