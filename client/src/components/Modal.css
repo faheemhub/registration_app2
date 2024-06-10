@@ -1,25 +1,28 @@
 .modal{
-    height: 300px;
+    height: 150px;
     width: 200px;
+    background-color: white;
     position: fixed;
     top: 52px;
     right: 20px;
-    border-radius: 5px;
+    border-radius: 2px;
     border: 1px solid rgb(170, 168, 168);
     z-index: 1;
     transition: ease-in-out 1s;
 }
 .profile{
-    border-bottom: 1px solid rgb(170, 168, 168);;
-    height: 100px;
-    padding: 0 5px;
+    height: 30px;
+    padding: 0 10px;
+    color: #777;
 }
 .profileSetting{
     border-bottom: 1px solid rgb(170, 168, 168);;
-    height: 110px;
-    padding: 0 5px;
+    height: 30px;
+    padding: 0 10px;
+    color: #777;
 }
 .logout{
-    height: auto;
-    padding: 0 5px;
+    height: 30px;
+    color: #777;
+    padding: 0 10px;
 }

@@ -19,6 +19,7 @@ const Signup = () => {
         });
         result = await result.json();
         if(result._id){
+            alert('Signup Successful')
             navigate('/home')
         }
     }

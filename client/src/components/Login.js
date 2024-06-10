@@ -3,9 +3,9 @@ import './Auth.css'
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
-    const [isSignup, setIsSignup] = useState('');
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [isSignup, setIsSignup] = useState();
+    const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
     const navigate = useNavigate();
     
     const handleSubmit = async(e) => {
@@ -16,7 +16,6 @@ const Login = () => {
             headers:{"Content-Type":"application/json"}
         });
         result = await result.json();
-            console.log(result);
            if(result.message){
             alert(result.message)
            }else{
@@ -36,7 +35,7 @@ const Login = () => {
         <label>
         <div style = {{display:"flex", justifyContent:"space-between"}}>
             <h4>Password</h4>
-            {!isSignup&&(<p style = {{color:"blue"}}>forgot password?</p>)}
+            {!isSignup && (<Link to = '/forgotpassword' style = {{color:"blue", marginTop:'20px', textDecoration:'none'}}>forgot password?</Link>)}
         </div>
             <input type="password" name="password" required onChange={e=>setPassword(e.target.value)}/>
         </label>

@@ -11,7 +11,7 @@ const Home = () => {
         <div className="home-div">
             <nav id="home-nav">
             <div className='nav-left-div'>
-
+                Home Page
             </div>
             <div className='nav-right-div'>
                 <div className="profile-icon" >

@@ -6,6 +6,8 @@ import Login from './components/Login'
 import Home from './components/Home';
 import Profile from './components/Profile';
 import Settings from './components/Settings';
+import ForgotPassword from './components/forgotPassword'
+// import ResetPassword from './components/resetPassword';
 
 function App() {
   
@@ -19,6 +21,7 @@ function App() {
       <Route exact path = '/profile' element = {<Profile/>}/>
       <Route exact path = '/settings' element = {<Settings/>}/>
       <Route exact path = '/logout' element = {<Login/>}/>
+      <Route exact path = '/forgotPassword' element = {<ForgotPassword/>}/>
     </Routes>
     </BrowserRouter>
     </div>
